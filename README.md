@@ -1,20 +1,28 @@
-#  Smart Shopping Cart Based on Computer Vision
+# Smart Shopping Cart Based on Computer Vision
 
+A graduation project aimed at enhancing the in-store shopping experience using computer vision and indoor navigation.  
+The system detects products using YOLOv11 and tracks them across frames using YOLOv8 + BYTrack algorithm. It also guides users within the store using SVG-based indoor maps.
 
+---
 
-Graduation project aimed at enhancing the in-store shopping experience through the use of computer vision and indoor navigation.  
-The system detects products using YOLOv11 and guides users within the store using dynamic SVG-based maps.
+## Custom Dataset
 
+All product images used in the object detection model were **manually collected and annotated by our team**.  
+We created a custom dataset tailored to the real products available in our test environment to improve accuracy and reduce false detection.
+
+---
 
 ## Overview
 
 This system provides a smart cart capable of:
 
 - Detecting products using a camera on the cart via a trained YOLOv11 model  
+- Tracking products using YOLOv8 with BYTrack  
 - Automatically adding recognized items to a digital shopping cart  
 - Guiding users to desired product locations using indoor navigation  
 - Managing products and users via a dedicated admin dashboard built with Next.js
 
+---
 
 ## Main Features
 
@@ -22,6 +30,11 @@ This system provides a smart cart capable of:
 - Real-time object detection using a custom-trained YOLOv11 model (PyTorch-based)  
 - No barcodes needed; camera detects products from visual input  
 - Supports multi-class detection with confidence scores and bounding boxes  
+
+### Product Tracking with YOLOv8 + BYTrack
+- Tracks products across frames to ensure stable detection  
+- Prevents duplication in cart when camera shakes or products move  
+- Helps monitor item movement within the cart’s view  
 
 ### Smart Cart System
 - Each product detected is added to the virtual cart  
@@ -41,31 +54,31 @@ This system provides a smart cart capable of:
   - Monitor user behavior and navigation  
 - Built with React + TailwindCSS using the Next.js framework
 
+---
 
-## Tech Stack
+##  Tech Stack
 
 | Component        | Technology               |
 |------------------|---------------------------|
 | Frontend         | Flutter                   |
 | Backend          | Python, Supabase, Next.js |
 | Object Detection | YOLOv11 (PyTorch)         |
+| Product Tracking | YOLOv8 + BYTrack          |
 | Mapping          | Custom SVG + Dijkstra     |
 | Database         | Supabase PostgreSQL       |
 | File Storage     | Supabase Storage          |
 
+---
 
-
-## Project Structure
+##  Project Structure
 
 ```bash
 Smart-shopping-cart/
-├── model/              # YOLOv11 model and backend scripts
+├── model/              # YOLOv11 + YOLOv8 backend and tracking scripts
 ├── recommendation/     # Product recommendation logic
 ├── web/                # Admin dashboard (Next.js)
+├── images/             # Project images
 ├── README.md           # Documentation
-├── cart.jpg            # Project image
-├── map.png             # Project image
-├── product.jpg         # Project image
 ```
 
 ###  Cart View
