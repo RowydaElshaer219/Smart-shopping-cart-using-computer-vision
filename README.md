@@ -1,7 +1,8 @@
 # Smart Shopping Cart Based on Computer Vision
 
-A graduation project aimed at enhancing the in-store shopping experience using computer vision and indoor navigation.  
-The system detects products using YOLOv11 and tracks them across frames using YOLOv8 + BYTrack algorithm. It also guides users within the store using SVG-based indoor maps.
+Our graduation project aims to enhance and modernize the traditional in-store shopping experience by combining computer vision and intelligent navigation.
+It addresses common pain points like manual barcode scanning, product lookup, and inefficient navigation inside large retail spaces. The system uses YOLOv11 for detecting products in real time and YOLOv8 + ByteTrack for tracking them across frames, ensuring accurate cart updates.
+To assist users in locating products quickly, the solution also includes a smart indoor navigation system based on SVG maps and Dijkstra’s algorithm, providing optimal routes within the store. This project demonstrates how AI can be applied to retail to improve customer satisfaction, reduce checkout time, and streamline store management.
 
 ---
 
