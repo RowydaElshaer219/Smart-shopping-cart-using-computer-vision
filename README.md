@@ -66,18 +66,17 @@ Smart-shopping-cart/
 ├── cart.jpg            # Project image
 ├── map.png             # Project image
 ├── product.jpg         # Project image
-
+```
 
 ###  Cart View
 
-![Cart View](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/images/cart.jpg
-)
+![Cart View](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/images/cart.jpg)
 
 ###  Indoor Mapping
 
 ![Indoor Map](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/images/map.png)
 
-###  Add Product
+###  Recommendation System
 
 ![Add Product](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/images/product.jpg)
 
@@ -137,9 +136,9 @@ PUBLIC_ANON_KEY=your-supabase-key
 * Use the admin dashboard to monitor data
 
 
-## Demo Video
+## Video
 
-[🎥 Project Demo (Google Drive)](https://drive.google.com/file/d/1nQub6-MFoiFiLvgXKkEJPIKgzGiim87u/view)
+[🎥 Idea Summery Video (Google Drive)](https://drive.google.com/file/d/1nQub6-MFoiFiLvgXKkEJPIKgzGiim87u/view)
 
 
 ## Team Members
