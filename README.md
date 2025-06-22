@@ -64,3 +64,6 @@ Smart-shopping-cart/
 ├── recommendation/     # Product recommendation logic
 ├── web/                # Admin dashboard (Next.js)
 ├── README.md           # Documentation
+├── cart.jpg            # Project image
+├── map.png             # Project image
+├── product.jpg         # Project image
