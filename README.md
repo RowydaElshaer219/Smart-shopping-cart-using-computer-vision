@@ -54,8 +54,10 @@ This system provides a smart cart capable of:
 | File Storage     | Supabase Storage          |
 
 
+
 ## Project Structure
 
+```bash
 Smart-shopping-cart/
 ├── model/              # YOLOv11 model and backend scripts
 ├── recommendation/     # Product recommendation logic
@@ -64,7 +66,6 @@ Smart-shopping-cart/
 ├── cart.jpg            # Project image
 ├── map.png             # Project image
 ├── product.jpg         # Project image
-
 
 
 ###  Cart View
