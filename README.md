@@ -9,6 +9,7 @@ The system detects products using YOLOv11 and tracks them across frames using YO
 
 All product images used in the object detection model were **manually collected and annotated by our team**.  
 We created a custom dataset tailored to the real products available in our test environment to improve accuracy and reduce false detection.
+[DataSet (Kaggle)](https://www.kaggle.com/datasets/rowydaelshaer/market-products/data)
 
 ---
 
@@ -151,7 +152,7 @@ PUBLIC_ANON_KEY=your-supabase-key
 
 ## Video
 
-[🎥 Idea Summery Video (Google Drive)](https://drive.google.com/file/d/1nQub6-MFoiFiLvgXKkEJPIKgzGiim87u/view)
+[ Idea Summery Video (Google Drive)](https://drive.google.com/file/d/1nQub6-MFoiFiLvgXKkEJPIKgzGiim87u/view)
 
 
 ## Team Members
