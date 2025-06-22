@@ -70,15 +70,16 @@ Smart-shopping-cart/
 
 ###  Cart View
 
-![Cart View](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/cart.jpg)
+![Cart View](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/images/cart.jpg
+)
 
 ###  Indoor Mapping
 
-![Indoor Map](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/map.png)
+![Indoor Map](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/images/map.png)
 
 ###  Add Product
 
-![Add Product](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/product.jpg)
+![Add Product](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/images/product.jpg)
 
 
 ## Installation & Setup
