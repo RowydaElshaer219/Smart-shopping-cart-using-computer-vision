@@ -1,141 +1,66 @@
-# 🛒 BAR2 (Smart Shopping Cart) 
+#  Smart Shopping Cart Based on Computer Vision
 
-A graduation project that aims to enhance the in-store shopping experience using computer vision and indoor navigation. The system enables automatic product detection using YOLOv11 and guides users through the store using SVG-based indoor maps.
+Graduation project aimed at enhancing the in-store shopping experience through the use of computer vision and indoor navigation.  
+The system detects products using YOLOv11 and guides users within the store using dynamic SVG-based maps.
 
-## 🚀 Overview
+---
 
-This smart shopping cart system combines real-time object detection and indoor mapping to:
-- Detect products using a camera mounted on the cart.
-- Automatically add items to a virtual shopping cart.
-- Display indoor navigation to help users find products efficiently.
-- Manage product and user data using a Next.js dashboard.
+## Overview
 
-## 🧠 Main Features
+This system provides a smart cart capable of:
 
-- 🔍 **YOLOv11-Based Object Detection**  
-  Detects and recognizes products in real time without barcodes.
+- Detecting products using a camera on the cart via a trained YOLOv11 model
+- Automatically adding recognized items to a digital shopping cart
+- Guiding users to desired product locations using indoor navigation
+- Managing products and users via a dedicated admin dashboard built with Next.js
 
-- 🛒 **Cart Management System**  
-  Detected products are auto-added to the digital cart, with quantity and total price updated dynamically.
+---
 
-- 🗺️ **Indoor Navigation System**  
-  Built using SVG maps and Dijkstra’s algorithm to guide users inside the store to their selected products.
+## Main Features
 
-- 🧭 **Route Optimization**  
-  Shortest path calculation between cart location and desired product location.
+### YOLOv11-Based Product Detection
+- Real-time object detection using a custom-trained YOLOv11 model (PyTorch-based)
+- No barcodes needed; camera detects products from visual input
+- Supports multi-class detection with confidence scores and bounding boxes
 
-- 📊 **Admin Dashboard (Next.js)**  
-  A web interface for managing product data, viewing user activity, and system control.
+### Smart Cart System
+- Each product detected is added to the virtual cart
+- Quantity is auto-incremented for repeated products
+- Total price and cart contents update live
 
-## 🛠️ Tech Stack
+### Indoor Navigation with SVG
+- Indoor map built using layered SVG files
+- Nodes represent locations on the store map
+- Uses Dijkstra’s Algorithm to calculate shortest paths between locations
+- Real-time display of cart location and navigation arrows
 
-| Component | Technology |
-|----------|------------|
-| Frontend | Flutter     |
-| Backend  | Python, Supabase, Next.js |
-| CV Model | YOLOv11 (PyTorch) |
-| Maps     | SVG + Dijkstra Algorithm |
-| Storage  | Supabase Storage |
+### Admin Dashboard (Next.js)
+- Admin can:
+  - Add/remove/update product details
+  - View current cart usage
+  - Monitor user behavior and navigation
+- Built with React + TailwindCSS using the Next.js framework
 
-## 📁 Project Structure
+---
 
-```bash
-smart-shopping-cart/
-├── model/                 # YOLOv11 model files and processing scripts
-├── recommendation/        # Recommendation engine and logic
-├── web/                   # Next.js dashboard for data management
-├── README.md              # Project documentation
-```
+## Tech Stack
 
-[Overview Video ](https://drive.google.com/file/u/0/d/1nQub6-MFoiFiLvgXKkEJPIKgzGiim87u/view)
+| Component       | Technology             |
+|----------------|------------------------|
+| Frontend       | Flutter                |
+| Backend        | Python, Supabase, Next.js |
+| Object Detection | YOLOv11 (PyTorch)     |
+| Mapping        | Custom SVG + Dijkstra Algorithm |
+| Database       | Supabase PostgreSQL    |
+| File Storage   | Supabase Storage       |
 
-![Cart View](https://raw.githubusercontent.com/Abuhamida/BAR2-Graduation-project/main/images/cart.jpg)
+---
 
-![Indoor Map](https://raw.githubusercontent.com/Abuhamida/BAR2-Graduation-project/main/images/map.png)
-
-![Add Product](https://raw.githubusercontent.com/Abuhamida/BAR2-Graduation-project/main/images/product.jpg)
-
-## 🔧 Installation & Setup
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/smart-shopping-cart.git
-cd smart-shopping-cart
-```
-
-### 2. Install Backend Dependencies
+## Project Structure
 
 ```bash
-cd model
-python -m venv venv
-# On Windows
-venv\Scripts\activate
-# On macOS/Linux
-source venv/bin/activate
-
-pip install -r requirements.txt
-```
-
-> **Note:**  
-> Before running the backend, make sure to update the Supabase URL and Key in `model/Data.py`:
-> ```python
-> url: str = "Add supabase URL"
-> key: str = "Add supabase Key"
-> ```
-> Replace the placeholder strings with your actual Supabase project credentials.
-
-
-
-### 3. Run YOLOv11 Inference Server
-
-Make sure your dataset is ready and the model is trained.
-
-```bash
-python main.py
-```
-
-### 4. Run Next.js Dashboard
-
-Navigate to the `web/` folder and run:
-
-```bash
-npm install
-npm run dev
-```
-> **Important:**  
-> For security and best practices, **do not** hardcode your Supabase URL and Key in the code.  
-> Instead, create a `.env` file in the `web/` directory and add your credentials:
-> ```
-> SUPABASE_URL=your-supabase-url
-> PUBLIC_ANON_KEY=your-supabase-key
-> ```
-
-
-## 🧪 Testing
-
-- Test object recognition using sample images or live video feed.
-- Navigate through the map and verify route calculation.
-- Add/remove products and check if the cart updates correctly.
-- Use the admin dashboard to manage products and view data.
-
-## 📚 Future Enhancements
-
-- Integration with self-checkout/payment systems.
-- User authentication and purchase history.
-- Real-time store inventory management.
-- Voice-assisted navigation.
-
-## 🙏 Acknowledgements
-
-- Supervisor: Dr. Amany Sarhan  
-- Team Members: Mohamed AbuHamida, Faris Awad, Rowayda El Shaer, Amr Awad, Mariam Ghoniem, Mariam Eslam, Ahmed ElShafai, Mahmoud Afandi, Omer Mohamed, Mohamed Amr
-- Tools: Ultralytics YOLO, Supabase, Flutter, PyTorch, Next.js
-
-## 📜 License
-
-This project is currently under development with the intent of forming a commercial startup.  
-You are free to view the code and provide feedback, but **commercial use, redistribution, or replication is not permitted** without written permission from the authors.
-
-For collaboration, licensing, or partnership inquiries, please contact us directly.
-
+Smart-shopping-cart/
+├── model/              # YOLOv11 model and backend scripts
+├── recommendation/     # Product recommendation logic
+├── web/                # Admin dashboard (Next.js)
+├── README.md           # Documentation
