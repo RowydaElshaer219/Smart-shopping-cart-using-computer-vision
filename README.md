@@ -9,6 +9,11 @@ The system detects products using YOLOv11 and tracks them across frames using YO
 
 All product images used in the object detection model were **manually collected and annotated by our team**.  
 We created a custom dataset tailored to the real products available in our test environment to improve accuracy and reduce false detection.
+
+To ensure robust and realistic detection performance:
+- Each product was photographed **from multiple angles** (45°, 90°, and full 360° rotation).
+- Images were taken under **different lighting conditions** and **varied distances** to simulate real-world scenarios.
+- The dataset was carefully annotated and reviewed to maximize model reliability.
 [DataSet (Kaggle)](https://www.kaggle.com/datasets/rowydaelshaer/market-products/data)
 
 ---
@@ -30,7 +35,12 @@ This system provides a smart cart capable of:
 ### YOLOv11-Based Product Detection
 - Real-time object detection using a custom-trained YOLOv11 model (PyTorch-based)  
 - No barcodes needed; camera detects products from visual input  
-- Supports multi-class detection with confidence scores and bounding boxes  
+- Supports multi-class detection with confidence scores and bounding boxes
+
+### Product Tracking with YOLOv8 (BYTrack)
+- Tracks products across frames to ensure stable detection  
+- Prevents duplication in cart when camera shakes or products move  
+- Helps monitor item movement within the cart’s view
 
 ### Product Tracking with YOLOv8 + BYTrack
 - Tracks products across frames to ensure stable detection  
@@ -81,6 +91,10 @@ Smart-shopping-cart/
 ├── images/             # Project images
 ├── README.md           # Documentation
 ```
+
+
+### Sample of Data
+![Data Creation](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/images/Sampleofdata.jpg)
 
 ###  Cart View
 
