@@ -94,7 +94,7 @@ Smart-shopping-cart/
 
 
 ### Sample of Data
-![Data Creation](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/images/Sampleofdata.jpg)
+![Data Creation](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/images/sampleofdata.jpg)
 
 ###  Cart View
 
