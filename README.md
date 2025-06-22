@@ -1,12 +1,10 @@
 #  Smart Shopping Cart Based on Computer Vision
 
 
-````markdown
 
 Graduation project aimed at enhancing the in-store shopping experience through the use of computer vision and indoor navigation.  
 The system detects products using YOLOv11 and guides users within the store using dynamic SVG-based maps.
 
----
 
 ## Overview
 
@@ -17,7 +15,6 @@ This system provides a smart cart capable of:
 - Guiding users to desired product locations using indoor navigation  
 - Managing products and users via a dedicated admin dashboard built with Next.js
 
----
 
 ## Main Features
 
@@ -44,7 +41,6 @@ This system provides a smart cart capable of:
   - Monitor user behavior and navigation  
 - Built with React + TailwindCSS using the Next.js framework
 
----
 
 ## Tech Stack
 
@@ -57,11 +53,9 @@ This system provides a smart cart capable of:
 | Database         | Supabase PostgreSQL       |
 | File Storage     | Supabase Storage          |
 
----
 
 ## Project Structure
 
-```bash
 Smart-shopping-cart/
 ├── model/              # YOLOv11 model and backend scripts
 ├── recommendation/     # Product recommendation logic
@@ -70,9 +64,7 @@ Smart-shopping-cart/
 ├── cart.jpg            # Project image
 ├── map.png             # Project image
 ├── product.jpg         # Project image
-````
 
----
 
 
 ###  Cart View
@@ -87,7 +79,6 @@ Smart-shopping-cart/
 
 ![Add Product](https://raw.githubusercontent.com/RowydaElshaer219/Smart-shopping-cart-using-computer-vision/main/product.jpg)
 
----
 
 ## Installation & Setup
 
@@ -120,8 +111,6 @@ key: str = "YOUR_SUPABASE_KEY"
 python main.py
 ```
 
----
-
 ### 4. Set Up the Admin Dashboard
 
 ```bash
@@ -137,7 +126,6 @@ SUPABASE_URL=your-supabase-url
 PUBLIC_ANON_KEY=your-supabase-key
 ```
 
----
 
 ## Testing
 
@@ -146,17 +134,13 @@ PUBLIC_ANON_KEY=your-supabase-key
 * Try adding/removing products from the cart
 * Use the admin dashboard to monitor data
 
----
 
 ## Demo Video
 
 [🎥 Project Demo (Google Drive)](https://drive.google.com/file/d/1nQub6-MFoiFiLvgXKkEJPIKgzGiim87u/view)
 
----
 
 ## Team Members
-
-* Supervisor: Dr. Amany Sarhan
 * Rowayda Abdelrahem
 * Mohamed AbuHamida
 * Faris Awad
@@ -168,6 +152,5 @@ PUBLIC_ANON_KEY=your-supabase-key
 * Mahmoud Afandi
 * Omer Mohamed
 
----
 
 
